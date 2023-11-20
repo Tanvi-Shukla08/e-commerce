@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Store | Ecommerce Website Design</title>
+    <title>Fashion Fusion | Ecommerce Website Design</title>
     <link rel="stylesheet" href="style.css" />
     <link href="
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,18 +20,44 @@
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <img src="images/app store.png" width="25px" />
+            <img src="images/fashion fusion.png" width="25px" />
           </div>
           <nav>
-            <ul>
+            <header>
+            <ul id="MenuItems">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li><a href="">Account</a></li>
+              
             </ul>
           </nav>
+        </header>
+
+        <div class="wrapper">
+          <div class="form-box login">
+               <h2>Login</h2>
+               <form action="#">
+                <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="email" required>
+                  <label>email</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon"></span>
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <input type="password" required>
+                  <label>password</label>
+                </div>
+               </form>
+          </div>
+        </div>
+        <script src="script.js"></script>
+        <script type="module" src="<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>"
           <img class="cartImg" src="images/cart.png" width="30px" height="30px" />
+          <img class="menu" src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
         <div class="row">
           <div class="col-2">
@@ -294,6 +321,7 @@
             <div class="col-5">
                 <img src="images/cocacola logo.png">
         </div>
+      
         <div class="col-5">
             <img src="images/oppo logo.png">
     </div>
@@ -303,6 +331,9 @@
 <div class="col-5">
     <img src="images/philips.png">
 </div>
+</div>
+        </div>
+</div>
 <!---------footer---->
 <div class="footer">
     <div class="container">
@@ -310,9 +341,13 @@
             <div class="footer-col-1">
                 <h3>Download Our App</h3>
                 <p>Download App for Android And ios mobile phone</p>
+                <div class="app-logo">
+                  <img src="images/apple.png">
+                  <img src="images/play.png">
+                </div>
             </div>
             <div class="footer-col-2">
-                <img src="images/white logo.jpg">
+                <img src="images/fashion fusion.png">
                 <p>Our Purpose To Sustainbly Make the pleasure and Benefits of Sports Accessible to the Many.</p>
             </div>
             <div class="footer-col-3">
@@ -334,9 +369,25 @@
                 </ul>
             </div>
         </div>
+        <hr>
+        <p class="copyright">copyright 2023 - Fashion Fusion</p>
     </div>
 </div>
+<!--------js for toggle menu------>
+<script>
+  var MenuItems = document.getElementById("MenuItems")
 
+  MenuItems.style.maxHeight = "0px";
+  function menutoggle(){
+    if(MenuItems.style.maxHeight = "0px"){
+      MenuItems.style.maxHeight = "200px"
+    }
+    else
+    {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
 
   </body>
 </html>
